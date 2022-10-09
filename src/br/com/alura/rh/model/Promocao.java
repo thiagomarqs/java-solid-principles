@@ -22,4 +22,10 @@ public class Promocao implements Reajuste{
     public LocalDate data() {
         return this.data;
     }
+
+    // Promoção tem um imposto de 10% sobre o valor do reajuste.
+    @Override
+    public BigDecimal valorImpostoDeRenda() {
+        return valor.multiply(new BigDecimal("0.1"));
+    }
 }
