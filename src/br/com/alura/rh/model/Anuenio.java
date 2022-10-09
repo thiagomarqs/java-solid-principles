@@ -23,10 +23,4 @@ public class Anuenio implements Reajuste {
         return this.data;
     }
 
-    // Anuênio não tem imposto de renda, mas mesmo assim temos que
-    // implementar o método por ser obrigatório da interface Reajuste (incorreto).
-    @Override
-    public BigDecimal valorImpostoDeRenda() {
-        return null;
-    }
 }
