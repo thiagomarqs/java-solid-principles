@@ -7,6 +7,7 @@ import java.util.List;
 
 public class ReajusteService {
 
+    // Dependency Inversion Principle
     private List<ValidacaoReajuste> validacoes;
 
     public ReajusteService(List<ValidacaoReajuste> validacoes) {
